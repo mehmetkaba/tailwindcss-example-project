@@ -10,15 +10,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Mynerve&family=Open+Sans&display=swap" />
 
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="./css/output.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="font-mynerve text-3xl font-bold  text-fbSari bg-fbLaci text-center">
-      Hello Tailwind CSS!
-    </h1>
-  </div>
+
+
+
+  <!-- Header Section -->
+  <header class="py-5 uppercase bg-black text-gray-50 font-gemunuLibre"> 
+
+    <!-- Header Container -->
+    <div class="container flex items-center justify-between space-x-16">
+      <!-- Logo -->
+      <a href="#" class="text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-red-500 to-gray-50">tcss</a>
+
+      <!-- Navigation -->
+      <nav class="flex justify-between flex-1">
+        <!-- Menu -->
+        <div class="flex items-center space-x-8 text-lg">
+          <a href="" class="transition duration-500 hover:text-yellow-300">movie</a>
+          <a href="" class="transition duration-500 hover:text-yellow-300">celebrities</a>
+          <a href="" class="transition duration-500 hover:text-yellow-300">blog</a>
+          <a href="" class="transition duration-500 hover:text-yellow-300">news</a>
+          <a href="" class="transition duration-500 hover:text-yellow-300">about</a>
+        </div>
+
+        <!-- Login Area -->
+        <div class="flex items-center">
+
+          <!-- Search Area -->
+          <form action="">
+            <div class="px-4 py-1 mx-4 border-r border-red-500 group">
+              <input type="text" class="transition duration-500 bg-transparent border-b border-red-500 opacity-0 group-hover:opacity-100 focus:outline-none">
+              <button class="-ml-4 transition duration-500 group-hover:ml-0"><i class="transition duration-500 fas fa-search group-hover:text-red-500"></i></button>
+            </div>
+          </form>
+
+          <!-- Signup Area -->
+          <div class="flex items-center space-x-8 text-lg">
+            <a href="">Login</a>
+            <a href="" class="px-3 py-1 transition duration-500 bg-red-500 rounded-sm cursor-pointer hover:bg-red-600 hover:text-green-50">Sign up</a>
+          </div>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
 </body>
 
 </html>
