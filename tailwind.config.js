@@ -21,6 +21,9 @@ module.exports = {
       colors: {
         'fbLaci': '#002d72',
         'fbSari': '#ffed00'
+      },
+      spacing: {
+        '128': '32rem'
       }
     },
 
